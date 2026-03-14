@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EthixVigilance Academy | Pharma Industry Training</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .gradient-bg { background: linear-gradient(135deg, #1d4ed8 0%, #1e40af 100%); }
+        
+        /* Accordion Custom Logic */
+        .course-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.5s ease-in-out, padding 0.3s ease;
+        }
+        
+        .course-accordion.active {
+            background-color: #1d4ed8 !important;
+            color: white !important;
+        }
+        
+        .course-accordion.active .course-content {
+            max-height: 500px;
+            padding-top: 1.5rem;
+        }
+
+        .course-accordion.active .icon-box {
+            background-color: rgba(255, 255, 255, 0.2) !important;
+            color: white !important;
+        }
+
+        .course-accordion.active h3 {
+            color: white !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold flex items-center">
+                <span class="text-blue-700">Ethix</span>
+                <span class="text-black ml-1">Vigilance Academy</span>
+            </div>
+
+            <div class="hidden lg:flex items-center space-x-8 font-medium">
+                <a href="#founder" class="hover:text-blue-700 transition">Founder</a>
+                
+                <div class="relative group py-2">
+                    <button class="flex items-center hover:text-blue-700">
+                        Who Can Join? <i data-lucide="chevron-down" class="ml-1 w-4 h-4"></i>
+                    </button>
+                    <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg mt-2 p-4 w-64 border border-slate-100">
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-2"><i data-lucide="microscope" class="text-blue-600 w-4 h-4"></i> M. Pharmacy</div>
+                            <div class="flex items-center gap-2"><i data-lucide="flask-conical" class="text-blue-600 w-4 h-4"></i> B. Pharmacy</div>
+                            <div class="flex items-center gap-2"><i data-lucide="dna" class="text-blue-600 w-4 h-4"></i> MSc Graduates</div>
+                            <div class="flex items-center gap-2"><i data-lucide="stethoscope" class="text-blue-600 w-4 h-4"></i> Life Science Graduates</div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="#courses" class="hover:text-blue-700 transition">Courses</a>
+                <a href="#contact" class="bg-blue-700 text-white px-5 py-2 rounded-full hover:bg-blue-800 transition">Contact Us</a>
+            </div>
+
+            <button class="lg:hidden text-slate-900" id="mobile-menu-btn">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <section class="gradient-bg text-white py-20 px-6">
+        <div class="container mx-auto text-center max-w-4xl">
+            <h1 class="text-4xl md:text-6xl font-extrabold mb-6 leading-tight">
+                <span class="text-white">Ethix</span><span class="text-blue-300">Vigilance Academy</span>: From Pharma degree to Industry Professional
+            </h1>
+            <p class="text-xl mb-8 opacity-90">
+                Online classes with Industry Experts from top Global Regulatory Companies. 
+                <span class="block mt-2 font-semibold">Certification + ATS-friendly Resume issued upon completion.</span>
+            </p>
+            
+            <div class="bg-white/10 backdrop-blur-md border border-white/20 inline-block p-6 rounded-2xl mb-10">
+                <p class="text-sm uppercase tracking-widest mb-2">Special Price</p>
+                <div class="text-5xl font-bold mb-2">999/-</div>
+                <p class="text-white-120">Including All Trainings, Certification, ATS Resume, and Career Assistance</p>
+            </div>
+            
+            <div class="flex flex-col md:flex-row gap-4 justify-center">
+                <a href="#contact" class="bg-white text-blue-700 px-8 py-4 rounded-lg font-bold hover:bg-slate-100 transition shadow-lg">Enroll Now</a>
+                <a href="#courses" class="border-2 border-white px-8 py-4 rounded-lg font-bold hover:bg-white hover:text-blue-700 transition">Explore Courses</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="founder" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center gap-12">
+                <div class="w-full md:w-1/3">
+                    <div class="aspect-square bg-slate-100 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-300">
+                        <i data-lucide="user-round" class="w-32 h-32 text-slate-400"></i>
+                    </div>
+                </div>
+                <div class="w-full md:w-2/3">
+                    <h2 class="text-blue-700 text-sm font-bold uppercase tracking-widest mb-2">The Founder</h2>
+                    <h3 class="text-4xl font-bold text-slate-900 mb-4">Ajay Yara / Lead Trainer Pharmacovigilance Expert</h3>
+                    <p class="text-slate-700 text-lg leading-relaxed mb-6">
+                        The academy was founded by Ajay Yara, a professional experience in Pharmacovigilance, with the mission of helping pharmacy and life-science graduates build successful careers in the global pharmaceutical industry.
+
+Our programs are designed with practical case studies, real industry workflows, and live interactive sessions so that students gain hands-on knowledge of drug safety operations used in pharmaceutical companies.
+
+ <h2 class="text-blue-700 text-sm font-bold uppercase tracking-widest mb-2">Why Choose Our Academy</h2>
+
+<p class="text-slate-700 text-lg leading-relaxed mb-6">
+* Industry expert trainers
+* Live online interactive classes
+* Real-time case processing training
+* Interview preparation & career guidance
+* Certification after course completion
+
+We aim to build the next generation of skilled professionals in the field of Pharmacovigilance and drug safety.
+
+<h2 class="text-blue-700 text-sm font-bold uppercase tracking-widest mb-2">About Our Academy</h2>
+
+<p class="text-slate-700 text-lg leading-relaxed mb-6">
+Our academy is dedicated to providing high-quality industry-oriented training in the field of Pharmacovigilance and pharmaceutical sciences. We focus on bridging the gap between academic knowledge and real pharmaceutical industry requirements.
+
+
+<h2 class="text-blue-700 text-sm font-bold uppercase tracking-widest mb-2">Our Mission</h2>
+
+<p class="text-slate-700 text-lg leading-relaxed mb-6">
+To empower students and graduates with practical skills, industry knowledge, and career guidance to succeed in the pharmaceutical and healthcare sectors.
+
+
+
+                    </p>
+                    <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-700">
+                        <p class="text-xl font-bold text-blue-900 italic">
+                            "Stop just studying, start qualifying. We bridge the gap between your academics and the global industry demands."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="py-20 bg-slate-100">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold mb-4">Courses We Offer</h2>
+                <p class="text-slate-600 max-w-2xl mx-auto">Transform your degree into a high-growth career with expert-led training. Click on any course to see the full syllabus.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8 items-start">
+                
+                <div class="course-accordion bg-white p-8 rounded-2xl shadow-sm cursor-pointer transition-all duration-300 group" onclick="toggleCourse(this)">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="icon-box w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i data-lucide="shield-check"></i>
+                        </div>
+                        <i data-lucide="plus" class="plus-icon transition-transform duration-300 group-[.active]:rotate-45"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 transition-colors">Pharmacovigilance</h3>
+                    
+                    <div class="course-content">
+                        <ul class="space-y-3 text-sm border-t border-white/20 pt-4">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Basic Knowledge on PV</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Literature Screening</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Literature Review</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> ICSR (Case Processing)</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Triage & MICC</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Regulatory Timelines</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="course-accordion bg-white p-8 rounded-2xl shadow-sm cursor-pointer transition-all duration-300 group" onclick="toggleCourse(this)">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="icon-box w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i data-lucide="file-spreadsheet"></i>
+                        </div>
+                        <i data-lucide="plus" class="plus-icon transition-transform duration-300 group-[.active]:rotate-45"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 transition-colors">Regulatory Affairs</h3>
+                    
+                    <div class="course-content">
+                        <ul class="space-y-3 text-sm border-t border-white/20 pt-4">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Document Level Publishing</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Submission Level Publishing</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> eCTD Gateway</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Regulatory Timelines</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Country Regulatory Authorities</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Industry Related Tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="course-accordion bg-white p-8 rounded-2xl shadow-sm cursor-pointer transition-all duration-300 group" onclick="toggleCourse(this)">
+                    <div class="flex justify-between items-center mb-4">
+                        <div class="icon-box w-12 h-12 bg-blue-100 text-blue-700 rounded-lg flex items-center justify-center transition-colors">
+                            <i data-lucide="globe-2"></i>
+                        </div>
+                        <i data-lucide="plus" class="plus-icon transition-transform duration-300 group-[.active]:rotate-45"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-slate-900 transition-colors">Global Regulatory Intelligence</h3>
+                    
+                    <div class="course-content">
+                        <ul class="space-y-3 text-sm border-t border-white/20 pt-4">
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Country-specific Websites</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Monitoring Strategy</li>
+                            <li class="flex items-center gap-2"><i data-lucide="check-circle-2" class="w-4 h-4"></i> Intelligence Tools</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-5xl">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl font-bold mb-6">How can we help you?</h2>
+                    <p class="text-slate-600 mb-8">Please fill the form, write or call to us, and we will contact you.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-100 p-3 rounded-full text-blue-700"><i data-lucide="phone"></i></div>
+                            <a href="tel:+917032422751" class="font-bold text-lg hover:text-blue-700">+91 7032422751</a>
+                        </div>
+                        <div class="flex items-center gap-4">
+                            <div class="bg-blue-100 p-3 rounded-full text-blue-700"><i data-lucide="mail"></i></div>
+                            <a href="mailto:ajaypharmacovigilance@gmail.com" class="font-bold text-lg hover:text-blue-700">ajaypharmacovigilance@gmail.com</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-slate-50 p-8 rounded-2xl border border-slate-200">
+                    <form action="https://formspree.io/f/mkoqzvpw" method="POST" class="grid gap-6">
+
+<input type="text" name="name" placeholder="Name" required class="p-3 border rounded">
+
+<input type="text" name="qualification" placeholder="Qualification" required class="p-3 border rounded">
+
+<input type="tel" name="mobile" placeholder="Mobile Number" required class="p-3 border rounded">
+
+<input type="text" name="college" placeholder="College / University" class="p-3 border rounded">
+
+<button type="submit" class="bg-blue-600 text-white py-3 rounded hover:bg-blue-700">
+
+Send Enquiry
+
+</button>
+
+</form>
+
+    <footer class="bg-slate-900 text-white py-12 text-center">
+        <div class="mb-4 text-xl font-bold">Ethix<span class="text-blue-400">Vigil Academy</span></div>
+        <p class="text-slate-400 text-sm italic mb-4">Empowering the next generation of Pharmaceutical Professionals.</p>
+        <p class="text-slate-500 text-xs">&copy; 2026 EthixVigil Academy. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Initialize Icons
+        lucide.createIcons();
+
+        // Accordion Toggle Logic
+        function toggleCourse(element) {
+            // Check if it's already active
+            const isActive = element.classList.contains('active');
+            
+            // Close all others
+            document.querySelectorAll('.course-accordion').forEach(card => {
+                card.classList.remove('active');
+            });
+
+            // If it wasn't active, open it
+            if (!isActive) {
+                element.classList.add('active');
+            }
+        }
+
+        // Mobile Menu Alert
+        const mobileBtn = document.getElementById('mobile-menu-btn');
+        mobileBtn.addEventListener('click', () => {
+            alert("Mobile Menu functionality would be linked here.");
+        });
+    </script>
+</body>
+</html>
